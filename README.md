@@ -32,8 +32,9 @@ Laravelで開発した勤怠管理アプリです。
 3. `cp .env.example .env`
 4. `cp .env.testing.example .env.testing`
 5. `php artisan key:generate`
-6. `php artisan migrate`
-7. `php artisan db:seed`
+6. `php artisan key:generate --env=testing`
+7. `php artisan migrate`
+8. `php artisan db:seed`
 
 ## ダミーデータ
 Seeder実行後、以下の管理者アカウントでログインできます。
@@ -79,6 +80,6 @@ CREATE DATABASE test;
 
 ## URL
 
-- 開発環境: http://localhost/
+- 開発環境: http://localhost/attendance
 - 管理者ログイン: http://localhost/admin/login
 - phpMyAdmin: http://localhost:8080/
