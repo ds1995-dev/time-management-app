@@ -1,0 +1,96 @@
+body {
+    font-family: "Inter", sans-serif;
+    background: #fff;
+}
+
+.header {
+    height: 80px;
+    padding: 12px 16px;
+    color: #fff;
+    background-color: #000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+}
+
+.header__inner-logo img {
+    display: block;
+    max-width: 370px;
+    height: auto;
+}
+
+.header__inner-search {
+    flex: 0 0 350px;
+    min-width: 0;
+}
+
+.header__inner-search__form {
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+}
+
+.header__inner-href {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__inner-href__logout {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff; /* 既存のログインと同じ色に */
+    background: none;
+    border: 0;
+    padding: 0;
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__inner-href__mypage {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .header__inner {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header__inner-search {
+        order: 3;
+        width: 100%;
+        flex: 1 1 240px;
+        min-width: 200px;
+    }
+
+    .header__inner-search__form {
+        max-width: 100%;
+    }
+
+    .header__inner-href {
+        order: 2;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 520px) {
+    .header__inner-logo img {
+        max-width: 140px;
+    }
+}
+
+.error {
+    color: red;
+}

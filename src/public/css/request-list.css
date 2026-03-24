@@ -1,0 +1,123 @@
+.request-list-page {
+    min-height: calc(100vh - 80px);
+    background: #e9e9ec;
+    padding: 72px 16px 96px;
+}
+
+.request-list {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.request-list__title {
+    margin: 0;
+    padding-left: 22px;
+    border-left: 10px solid #111;
+    color: #111;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.request-list__tabs {
+    margin-top: 78px;
+    padding: 0 0 16px;
+    border-bottom: 1px solid #4a4a4a;
+    display: flex;
+    align-items: flex-end;
+    gap: 92px;
+}
+
+.request-list__tab {
+    color: #111;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.request-list__tab--active {
+    font-weight: 700;
+}
+
+.request-list__table-wrap {
+    margin-top: 62px;
+    background: #fff;
+    border: 1px solid #d8d8da;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.request-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.request-table th,
+.request-table td {
+    height: 62px;
+    padding: 0 18px;
+    border-bottom: 1px solid #d9d9db;
+    color: #767676;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.request-table th {
+    background: #fff;
+}
+
+.request-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.request-table__detail {
+    color: #111;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .request-list-page {
+        padding-top: 42px;
+    }
+
+    .request-list__tabs {
+        margin-top: 44px;
+        gap: 40px;
+    }
+
+    .request-list__tab {
+        font-size: 18px;
+    }
+
+    .request-list__table-wrap {
+        margin-top: 34px;
+        overflow-x: auto;
+    }
+
+    .request-table {
+        min-width: 760px;
+    }
+
+    .request-table th,
+    .request-table td {
+        height: 52px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .request-list__title {
+        font-size: 28px;
+    }
+
+    .request-list__tabs {
+        gap: 24px;
+    }
+
+    .request-list__tab {
+        font-size: 16px;
+    }
+}

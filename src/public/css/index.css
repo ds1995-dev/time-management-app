@@ -1,0 +1,125 @@
+.attendance-page {
+    min-height: calc(100vh - 80px);
+    padding: 32px 16px 56px;
+    background: #e9e9ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attendance-card {
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+}
+
+.attendance-card__status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 104px;
+    height: 42px;
+    padding: 0 20px;
+    margin: 0;
+    border-radius: 9999px;
+    background: #b9b9bc;
+    color: #5f5f63;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.attendance-card__date {
+    margin: 56px 0 0;
+    color: #111;
+    font-size: clamp(36px, 3vw, 56px);
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.attendance-card__time {
+    margin: 36px 0 0;
+    color: #000;
+    font-size: clamp(88px, 8vw, 144px);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
+.attendance-card__thanks {
+    margin: 100px 0 0;
+    color: #000;
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.attendance-card__button {
+    margin-top: 72px;
+    min-width: 260px;
+    height: 92px;
+    padding: 0 36px;
+    border: none;
+    border-radius: 22px;
+    background: #000;
+    color: #fff;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.attendance-card__button-break {
+    margin-top: 72px;
+    min-width: 260px;
+    height: 92px;
+    padding: 0 36px;
+    border: none;
+    border-radius: 22px;
+    background: #fff;
+    color: #000;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .attendance-card__status {
+        min-width: 82px;
+        height: 34px;
+        font-size: 18px;
+    }
+
+    .attendance-card__date {
+        margin-top: 36px;
+        font-size: clamp(30px, 4vw, 44px);
+    }
+
+    .attendance-card__time {
+        margin-top: 26px;
+        font-size: clamp(64px, 13vw, 108px);
+    }
+
+    .attendance-card__button {
+        margin-top: 48px;
+        min-width: 210px;
+        height: 76px;
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 600px) {
+    .attendance-page {
+        padding-top: 16px;
+    }
+
+    .attendance-card__date {
+        font-size: clamp(28px, 8.5vw, 40px);
+    }
+
+    .attendance-card__button {
+        width: 100%;
+        max-width: 320px;
+    }
+}

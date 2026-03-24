@@ -1,0 +1,108 @@
+.admin-staff-page {
+    min-height: calc(100vh - 80px);
+    background: #e9e9ec;
+    padding: 74px 16px 96px;
+}
+
+.admin-staff {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.admin-staff__title {
+    margin: 0;
+    padding-left: 22px;
+    border-left: 10px solid #111;
+    color: #111;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.admin-staff__table-wrap {
+    margin-top: 96px;
+    background: #fff;
+    border: 1px solid #d8d8da;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.admin-staff-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-staff-table th,
+.admin-staff-table td {
+    height: 72px;
+    padding: 0 24px;
+    border-bottom: 1px solid #d9d9db;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.admin-staff-table th {
+    background: #fff;
+}
+
+.admin-staff-table thead th {
+    color: #666;
+}
+
+.admin-staff-table thead th:first-child,
+.admin-staff-table td:first-child {
+    width: 38%;
+    text-align: center;
+}
+
+.admin-staff-table thead th:nth-child(2),
+.admin-staff-table td:nth-child(2) {
+    width: 42%;
+}
+
+.admin-staff-table thead th:last-child,
+.admin-staff-table td:last-child {
+    width: 20%;
+    text-align: center;
+}
+
+.admin-staff-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.admin-staff-table__detail {
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .admin-staff-page {
+        padding-top: 40px;
+    }
+
+    .admin-staff__title {
+        font-size: 34px;
+    }
+
+    .admin-staff__table-wrap {
+        margin-top: 40px;
+        overflow-x: auto;
+    }
+
+    .admin-staff-table {
+        min-width: 820px;
+    }
+
+    .admin-staff-table th,
+    .admin-staff-table td,
+    .admin-staff-table__detail {
+        font-size: 22px;
+        height: 52px;
+    }
+}
